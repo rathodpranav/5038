@@ -1,0 +1,623 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "id": "3f3594be-9274-4249-b51b-c3c35efed768",
+   "metadata": {},
+   "source": [
+    "# 1. Create a set and display its elements"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "0186b48e-6cfb-46df-81bd-6c3d3e1b5e0b",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Set: {1, 2, 3, 4}\n"
+     ]
+    }
+   ],
+   "source": [
+    "s = {1, 2, 3, 4}\n",
+    "print(\"Set:\", s)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "e4ceb963-becf-4cff-915d-d325a0619bd2",
+   "metadata": {},
+   "source": [
+    "# 2.Add an element to a set"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "1f1c1395-e332-43c9-8c42-46a12aaae0fc",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "after adding 5: {1, 2, 3, 4, 5}\n"
+     ]
+    }
+   ],
+   "source": [
+    "s.add(5)\n",
+    "print(\"after adding 5:\", s)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "ad02a4ea-5690-468c-852a-029b0f47f0c6",
+   "metadata": {},
+   "source": [
+    "# 3. Remove an element from a set"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "d2a53657-11ca-4bd9-92ae-c478da18bfcf",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "After removing 3: {1, 2, 4, 5}\n"
+     ]
+    }
+   ],
+   "source": [
+    "s.remove(3)\n",
+    "print(\"After removing 3:\",s)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "b31f8d4e-3e3d-418b-b488-31e43e326a04",
+   "metadata": {},
+   "source": [
+    "# 4. Clear all elements from a set"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "id": "cade93ba-7949-44cd-aa5f-bafbe920020c",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "After clearing: set()\n"
+     ]
+    }
+   ],
+   "source": [
+    "s.clear()\n",
+    "print(\"After clearing:\",s)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "32760afb-d491-4e60-a661-d7847db3429e",
+   "metadata": {},
+   "source": [
+    "# 5. copy a set to another set"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "id": "77d46373-4362-4f41-912d-762f7e65477c",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Original Set: {10, 20, 30}\n",
+      "Copied Set: {10, 20, 30}\n"
+     ]
+    }
+   ],
+   "source": [
+    "s1 = {10, 20, 30}\n",
+    "s2 = s1.copy()\n",
+    "print(\"Original Set:\", s1)\n",
+    "print(\"Copied Set:\", s2)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "c7ab293f-2d85-44b1-81d4-42ea24db8720",
+   "metadata": {},
+   "source": [
+    "# 6. Check if an element exists in a set"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "id": "99d46f19-fcf3-4e5e-9032-7eeba5e50412",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Is 20 in s1? True\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(\"Is 20 in s1?\",20 in s1)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "3a90978f-a534-4408-ba6f-f8064dbc1631",
+   "metadata": {},
+   "source": [
+    "# 7. Find the length of a set"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "id": "45ccc7b8-bf7c-40c0-a2d7-ce1575a6ef84",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Length of s1: 3\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(\"Length of s1:\", len(s1))"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "9e25c1ac-ed36-4721-96e6-41018fc7d399",
+   "metadata": {},
+   "source": [
+    "# 8. Iterate through a set using a loop"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "id": "dfcc635a-d4e8-4b6d-b37e-cf5d257d8aa5",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Item: 10\n",
+      "Item: 20\n",
+      "Item: 30\n"
+     ]
+    }
+   ],
+   "source": [
+    "for item in s1:\n",
+    "    print(\"Item:\",item)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 16,
+   "id": "e38f4882-6b87-4cec-9d37-51d519a702b8",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter elements for set A: 1 2 3 4 5\n",
+      "Enter elements for set B: 3 4 5 6 7 8\n"
+     ]
+    }
+   ],
+   "source": [
+    "A = set(map(int, input(\"Enter elements for set A:\").split()))\n",
+    "B = set(map(int, input(\"Enter elements for set B:\").split()))"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "a5e5a3dd-54a7-408a-9d54-60a7b5b8e839",
+   "metadata": {},
+   "source": [
+    "# 9. Union"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 18,
+   "id": "37ac6595-b190-4820-9596-62c6df763342",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Union: {1, 2, 3, 4, 5, 6, 7, 8}\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(\"Union:\", A.union(B))"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "1f67e2c2-cc26-43a4-afa2-26997e3323f4",
+   "metadata": {},
+   "source": [
+    "# 10. Intersection"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "id": "36389573-22b8-4403-99d2-2f9ad7c11dce",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Intersection: {3, 4, 5}\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(\"Intersection:\", A.intersection(B))"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "bb6e7580-f26b-42d0-9786-759a3542c524",
+   "metadata": {},
+   "source": [
+    "# 11. Difference A - B"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 19,
+   "id": "8a658e01-3bb3-4d41-b792-c5eb8e63facb",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "A - B: {1, 2}\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(\"A - B:\", A.difference(B))"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "0b2d2d59-44bf-45de-a798-5113f44bfce8",
+   "metadata": {},
+   "source": [
+    "# 12. Symmetric Difference"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 20,
+   "id": "0dbacd44-e216-4751-9d25-920db1fc84cc",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Symmetric Difference: {1, 2, 6, 7, 8}\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(\"Symmetric Difference:\",A.symmetric_difference(B))"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "c1bd0e86-c58a-45ca-a86c-4a02bc5a5993",
+   "metadata": {},
+   "source": [
+    "# 13. Check if A is subset of B"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 21,
+   "id": "bf4735bf-ac36-4be5-b4e7-2c3a3c9cafbb",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "A is subset of B? False\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(\"A is subset of B?\", A.issubset(B))"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "b2766a7f-958c-41e6-af21-c1e3d055e334",
+   "metadata": {},
+   "source": [
+    "# 14. Check if A is superset of B"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 22,
+   "id": "6e0422c7-6a0b-403e-894e-2fe25529278e",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "A is superset of B? False\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(\"A is superset of B?\", A.issuperset(B))"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "ee466edd-b883-4814-968b-732a5bb2f835",
+   "metadata": {},
+   "source": [
+    "# 15. Check if A and B are disjoint"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 23,
+   "id": "bf2eeb06-4744-4b23-b400-6b66dd6f1c5f",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Are A and B disjoint? False\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(\"Are A and B disjoint?\", A.isdisjoint(B))"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "2a507168-8052-48fb-ab00-a08648a73ef6",
+   "metadata": {},
+   "source": [
+    "# 16. Remove duplication from a list using a set"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "8587adda-a99d-4d4a-9a60-8ef5246ad1de",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "List without duplication: [1, 2, 3, 4, 5]\n"
+     ]
+    }
+   ],
+   "source": [
+    "my_list = [1, 2, 2, 3, 4, 4, 5]\n",
+    "unique = list(set(my_list))\n",
+    "print(\"List without duplication:\", unique)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "509586e7-be78-4501-aff1-6a3b1e9c2396",
+   "metadata": {},
+   "source": [
+    "# 17. Convert a list to a set and back to a list"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "fd5ef87c-f70a-42e5-8290-15533df1f903",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Converted to set and back: [10, 20, 30]\n"
+     ]
+    }
+   ],
+   "source": [
+    "lst = [10, 20, 20, 30]\n",
+    "s = set(lst)\n",
+    "lst2 = list(s)\n",
+    "print(\"Converted to set and back:\", lst2)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "ecdaa6f4-fca1-479b-98c3-a82c2f42c8ab",
+   "metadata": {},
+   "source": [
+    "# 18. Common elements in two lists"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 41,
+   "id": "6cf834b3-0b4b-4ce8-bad8-92174d760f26",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Common elements are: [4]\n"
+     ]
+    }
+   ],
+   "source": [
+    "list1 = [1,3,2,4]\n",
+    "list2 = [4,5,6,7]\n",
+    "common = [element for element in list1 if element in list2]\n",
+    "print(\"Common elements are:\",common)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "8315640c-dd85-4487-9978-a46c38c17aef",
+   "metadata": {},
+   "source": [
+    "# 19. Elements in one list but not in another"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "id": "1dbb00e4-04f0-457c-950b-c45122134aec",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Elements in l1 not in l2: [1, 2]\n"
+     ]
+    }
+   ],
+   "source": [
+    "l1 = [1, 2, 3, 4]\n",
+    "l2 = [3, 4, 5, 6]\n",
+    "diff = list(set(l1) - set(l2))\n",
+    "print(\"Elements in l1 not in l2:\", diff)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "bbe7d38d-6f14-4f31-8933-bc1b10130871",
+   "metadata": {},
+   "source": [
+    "# 20. Use set comprehension to generate a set "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "5bb8b4b2-4999-463b-83c8-8c6b9c6f94f6",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Set of squares: {1, 4, 9, 16, 25}\n"
+     ]
+    }
+   ],
+   "source": [
+    "squares = {x**2 for x in range (1, 6)}\n",
+    "print(\"Set of squares:\", squares)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "09728af9-c90e-45a4-ae22-552300104556",
+   "metadata": {},
+   "source": [
+    "# 21. Create and print a frozenset"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "id": "04798184-ced0-48c8-868e-dc9fce816606",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Frozenset : frozenset({1, 2, 3, 4})\n"
+     ]
+    }
+   ],
+   "source": [
+    "fset = frozenset([1, 2, 3, 4])\n",
+    "print(\"Frozenset :\", fset)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "1898659a-c349-4b52-87a8-ebb9614b977c",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.12.7"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
